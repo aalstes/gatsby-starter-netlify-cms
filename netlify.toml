@@ -1,7 +1,10 @@
 [build]
   publish = "public"
   command = "npm run build"
-  functions = "./functions"  
+# Don't use functions (yet).
+# There is no way to set limits on metered feature usage, aside from not using a feature at all.
+# https://www.netlify.com/docs/billing-faq/
+#  functions = "./functions"
 [build.environment]
   YARN_VERSION = "1.9.4"
   YARN_FLAGS = "--no-ignore-optional"
